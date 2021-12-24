@@ -1,4 +1,4 @@
-# ghidra-ExportDwardELFSymbols
+# ghidra-ExportDwarfELFSymbols
 A format agnostic script to export an ELF file with DWARF symbols from a Ghidra program
 
 This script was heavilly inspired by CeSeNA's [ghidra2dwarf](https://github.com/cesena/ghidra2dwarf) script, but the main difference is their script append informations to an existing ELF while this script is to generate a new one from scratch and figure out the proper format.
