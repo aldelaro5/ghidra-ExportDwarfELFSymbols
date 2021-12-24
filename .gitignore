@@ -1,0 +1,9 @@
+/libdwarf/src/main/resources/darwin/libdwarf.dylib
+/libdwarf/src/main/resources/linux-x86-64/libdwarf.so
+/libdwarf/src/main/resources/win32-x86-64/libdwarf.dll
+/libdwarf/target/classes/darwin/libdwarf.dylib
+/libdwarf/target/classes/linux-x86-64/libdwarf.so
+/libdwarf/target/classes/win32-x86-64/libdwarf.dll
+/libdwarf/target/libdwarf.jar
+/libdwarf/target/maven-archiver/pom.properties
+/libdwarf/target/original-libdwarf.jar
