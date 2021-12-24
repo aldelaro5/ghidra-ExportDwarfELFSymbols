@@ -4,7 +4,7 @@ A format agnostic script to export an ELF file with DWARF symbols from a Ghidra 
 This script was heavilly inspired by CeSeNA's [ghidra2dwarf](https://github.com/cesena/ghidra2dwarf) script, but the main difference is their script append informations to an existing ELF while this script is to generate a new one from scratch and figure out the proper format.
 
 ## Motivations
-This script was made because there currently isn't a good way to work with relatively esotheric debugging targets for ghidra (like console emulators) while being able to not only have symbols, but have access to debugging features such as `nexti` (step over). The `nexti` command has trouble to works on these targets (it would act as a `stepi`) because GDB doesn't have enough informations to unwind the stack and after research, it was found that giving minimal symbols to GDB (mainly where functions are) is enough for it to figure out how to decide that a new stack frame was entered
+This script was made because there currently isn't a good way to work with relatively esotheric debugging targets for ghidra (like console emulators) while being able to have symbols, but also have access to debugging features such as `nexti` (step over). The `nexti` command has trouble to works on these targets (it would act as a `stepi`) because GDB doesn't have enough informations to unwind the stack and after research, it was found that giving minimal symbols to GDB (mainly where functions are) is enough for it to figure out how to decide that a new stack frame was entered
 
 ## Features
 This script was made to generate the ELF from scratch: it doesn't care how the program is formatted, it simply spit DWARF informations from what Ghidra knows.
