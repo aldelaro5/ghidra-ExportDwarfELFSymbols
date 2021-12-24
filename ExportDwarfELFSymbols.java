@@ -30,7 +30,7 @@ import ghidra.program.model.listing.Program;
 import docking.widgets.filechooser.GhidraFileChooser;
 import docking.widgets.filechooser.GhidraFileChooserMode;
 
-public class ExportDwardELFSymbols extends GhidraScript
+public class ExportDwarfELFSymbols extends GhidraScript
 {
     private class SectionInfo
     {
