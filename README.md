@@ -30,6 +30,15 @@ Currently, only the names, entry points and the ends address of functions are ex
 
 If Ghidra complains about not being able to find a library at step 2, make sure you performed the second step of the installation instructions correctly (it is required for Ghidra to be aware of the existence of the .jar file).
 
+## Building instructions
+> Note, if you just want to use the script, you do not need to do this, this section is for developers
+
+First, build the jar file containing the different versions of libdwarf by running the `libdwarf/build.sh` script (this will download the libraries if they aren't present). After that, you should have a `libdwarf.jar` in the `libdwarf/targets` folder.
+
+Next, setup a ghidra script project as you would normally to the root directory of the repository. You will need to add both JNA's jar as well as `libdwarf.jar` to your build path (in Eclipse, you can do this by right clciking on Refferenced Librairies then Build Path -> Configure Build Path...). To get the JNA's jars, download them from the [JNA repo](https://github.com/java-native-access/jna) by following the links in the README.
+
+Once done, the script should build and run sucessfully after launching Ghidra from there.
+
 ## License
 This script is licensed under the MIT license which grants you the rights to share, modify and distribute this script as long as you mention the original author. For more details, please consult the LICENSE file.
 
