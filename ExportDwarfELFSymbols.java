@@ -461,7 +461,7 @@ public class ExportDwarfELFSymbols extends GhidraScript
 	    else
 		writeInt32ToFout(fout, byteOrder, elfSectionTypeProgBits);
 	    // flags
-	    writeIntWithBitness(fout, byteOrder, 0, is64Bit);
+	    writeIntWithBitness(fout, byteOrder, 2, is64Bit);
 	    // virtual address
 	    writeIntWithBitness(fout, byteOrder, 0, is64Bit);
 	    // section offset
