@@ -56,7 +56,7 @@ public class ExportDwarfELFSymbols extends GhidraScript
     private static final byte[] elfMagic = { 0x7F, 0x45, 0x4C, 0x46 };
 
     private static final byte elfClass32Bit = 1;
-    private static final byte elfClass64Bit = 1;
+    private static final byte elfClass64Bit = 2;
 
     private static final byte elfDataLittleEndian = 1;
     private static final byte elfDataBigEndian = 2;
